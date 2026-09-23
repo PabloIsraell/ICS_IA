@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroVerse - La Época Dorada del Píxel</title> <!-- Fuente Space Grotesk desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"> <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ======================================================================== 1. Encabezado Superior (Header) ======================================================================== -->
+    <header class="site-header">
+        <div class="brand">
+            <div class="brand-icon" aria-hidden="true">👾</div>
+            <div class="brand-text"> <span class="brand-title">RETROVERSE</span> <span class="brand-subtitle">Retro
+                    Arcade</span> </div>
+        </div> <button class="avatar-btn" type="button" aria-label="Perfil de usuario"> <svg width="20" height="20"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg> </button>
+    </header>
+    <!-- ======================================================================== 2. Contenido Principal ======================================================================== -->
+    <main class="content-wrapper"> <!-- Sección Hero / Presentación -->
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="badge">🎮 PROYECTO WEB DEV</div>
+            <h1 id="hero-title" class="hero-title"> La Época Dorada<br> <span class="text-highlight">del Píxel</span>
+            </h1>
+            <p class="hero-description"> Explora la revolución de los 8 y 16 bits. Una era donde las limitaciones
+                técnicas impulsaron un ingenio sin precedentes en mecánicas, diseño visual y síntesis sonora que definió
+                la cultura digital actual. </p>
+            <div class="cta-group"> <a href="#modulos" class="btn btn-primary">Explorar Catálogo</a> <a
+                    href="#fundamentos" class="btn btn-secondary">Historia</a> </div>
+            <!-- Cuadrícula de especificaciones técnicas retro -->
+            <div class="stats-grid" role="region" aria-label="Especificaciones de la era retro">
+                <div class="stat-card"> <span class="stat-value">256×240</span> <span
+                        class="stat-label">Resolución</span> </div>
+                <div class="stat-card"> <span class="stat-value">5 Canales</span> <span class="stat-label">Audio
+                        Chiptune</span> </div>
+                <div class="stat-card"> <span class="stat-value">16 Colores</span> <span class="stat-label">Paleta
+                        Base</span> </div>
+            </div>
+        </section> <!-- Sección de Módulos (3 Tarjetas de contenido) -->
+        <section id="modulos" class="modules-section" aria-labelledby="modules-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="modules-title" class="section-title">Módulos del Curso</h2>
+                    <p class="section-subtitle">Arquitectura y legado histórico</p>
+                </div> <span class="heading-icon" aria-hidden="true">⚙️</span>
+            </div>
+            <div class="cards-list"> <!-- Tarjeta 1: Arcades -->
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-icon" aria-hidden="true">🕹️</div> <span class="badge-tag">1980 - 1989</span>
+                    </div>
+                    <h3 class="card-title">Arcades Legendarios</h3>
+                    <p class="card-text"> Las cabinas recreativas marcaron el inicio del gaming social. Analizaremos
+                        hitos fundacionales como <strong>Pac-Man</strong> y <strong>Space Invaders</strong>, desde sus
+                        bucles de juego adictivos hasta el arte de exprimir el microprocesador Zilog Z80. </p>
+                    <div class="card-footer"> <span class="card-meta">Lección 01 • CRT &amp; Monedas</span> <a href="#"
+                            class="card-link">Ver clásicos &rarr;</a> </div>
+                </article> <!-- Tarjeta 2: Consolas -->
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-icon" aria-hidden="true">🎮</div> <span class="badge-tag">16-BIT ERA</span>
+                    </div>
+                    <h3 class="card-title">Consolas Domésticas</h3>
+                    <p class="card-text"> El salón de casa como nuevo epicentro digital. Estudio del hardware que
+                        redefinió los videojuegos con cartuchos ROM: el microchip Ricoh 2A03 de la NES frente a la
+                        potencia estéreo del procesador Motorola 68000 en Mega Drive. </p>
+                    <div class="card-footer"> <span class="card-meta">Lección 02 • Cartuchos &amp; RAM</span> <a
+                            href="#" class="card-link">Ver consolas &rarr;</a> </div>
+                </article> <!-- Tarjeta 3: Audio Chiptune -->
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-icon" aria-hidden="true">🎵</div> <span class="badge-tag">8-BIT AUDIO</span>
+                    </div>
+                    <h3 class="card-title">Música Chiptune</h3>
+                    <p class="card-text"> Armonías forjadas mediante ondas cuadradas, ruido blanco y canales de
+                        modulación delta. Descubre cómo compositores legendarios convirtieron chips de sintetizador
+                        limitados a cuatro canales en bandas sonoras inmortales. </p>
+                    <div class="card-footer"> <span class="card-meta">Lección 03 • Síntesis PSG</span> <a href="#"
+                            class="card-link">Escuchar temas &rarr;</a> </div>
+                </article>
+            </div>
+        </section> <!-- Sección Inferior: Lecciones & Descarga de Material -->
+        <section id="fundamentos" class="guide-section" aria-labelledby="guide-title">
+            <div class="badge-sub">📍 FUNDAMENTOS DE DISEÑO</div>
+            <h2 id="guide-title" class="sub-title">¿Por qué estudiar videojuegos retro?</h2>
+            <p class="sub-description"> Dos lecciones maestras aplicables directamente al diseño de software y páginas
+                web modernas: </p>
+            <div class="lessons-list">
+                <div class="lesson-item">
+                    <div class="lesson-number">1</div>
+                    <div class="lesson-body">
+                        <h4>Mecánicas Puras y Feedback Inmediato</h4>
+                        <p>Sin gráficos fotorrealistas en los que escudarse, un juego clásico triunfaba exclusivamente
+                            por la precisión de sus controles y la claridad cognitiva de sus pantallas.</p>
+                    </div>
+                </div>
+                <div class="lesson-item">
+                    <div class="lesson-number">2</div>
+                    <div class="lesson-body">
+                        <h4>Creatividad Bajo Limitaciones Extremas</h4>
+                        <p>Programar con 64 KB de almacenamiento obligó a inventar técnicas de compresión de paletas,
+                            ciclos de animación por celda y optimización de código esenciales hoy en la web ligera.</p>
+                    </div>
+                </div>
+            </div> <!-- Formulario para estudiantes -->
+            <div class="form-container">
+                <h3>Recibe las Guías de Laboratorio</h3>
+                <p>Plantillas descargables en HTML/CSS vanilla y paletas de color 8-bit para tus proyectos escolares.
+                </p>
+                <form class="download-form" action="#" method="POST" onsubmit="return false;"> <label
+                        for="student-email" class="form-label">Correo estudiantil o alias:</label> <input type="email"
+                        id="student-email" name="student_email" placeholder="pixel.student@escuela.edu" required
+                        class="form-input"> <button type="submit" class="btn btn-download"> 📥 Descargar Cuaderno
+                        Práctico </button> </form>
+            </div>
+        </section> <!-- Pie de página educativo -->
+        <footer class="site-footer">
+            <div class="footer-links"> <a href="#">About Project</a> • <a href="#">Style Guide</a> • <a
+                    href="#">Syllabus</a> </div>
+            <p class="copyright">© 2024 PixelArcade • Classroom Educational Mockup</p>
+            <p class="credits">Built for Mobile Web Design Class • Semantic HTML &amp; Vanilla CSS</p>
+        </footer>
+    </main>
+    <!-- ======================================================================== 3. Barra de Navegación Inferior (Móvil) ======================================================================== -->
+    <nav class="bottom-nav" aria-label="Navegación principal inferior"> <a href="#modulos" class="nav-item active">
+            <span class="nav-icon" aria-hidden="true">🎮</span> <span class="nav-label">Arcade</span> </a> <a href="#"
+            class="nav-item"> <span class="nav-icon" aria-hidden="true">🏆</span> <span class="nav-label">Ranks</span>
+        </a> <a href="#fundamentos" class="nav-item"> <span class="nav-icon" aria-hidden="true">🎓</span> <span
+                class="nav-label">Guide</span> </a> <a href="#" class="nav-item"> <span class="nav-icon"
+                aria-hidden="true">👤</span> <span class="nav-label">Profile</span> </a> </nav>
+</body>
+
+</html> ``` ### Estructura y buenas prácticas incluidas para clase: - **Etiquetas semánticas estándar**: `<header>`, `
+    <main>`, `<section>`, `<article>`, `<nav>` y `<footer>`. - **Accesibilidad web (a11y)**: Atributos `aria-label`,
+                        `aria-labelledby`, `aria-hidden` en iconos decorativos y etiquetas `<label>` vinculadas a sus
+                            respectivos `<input id="...">`. - **Organización de archivos**:

@@ -1,0 +1,528 @@
+/* ==========================================================================
+   Variables y Configuración Global (Tema Retro: Oscuro + Púrpura / Cian)
+   ========================================================================== */
+:root {
+  /* Paleta de colores */
+  --bg-dark: #0c0e17;
+  --bg-surface: #11131c;
+  --bg-card: #191b24;
+  --bg-card-hover: #222533;
+  --border-color: #272a39;
+
+  /* Acentos */
+  --accent-purple: #8b5cf6;
+  --accent-purple-light: #c4b5fd;
+  --accent-cyan: #38bdf8;
+  --accent-cyan-light: #7dd3fc;
+
+  /* Textos */
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* Tipografía y radios */
+  --font-main: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 72px; /* Margen para no tapar contenido con la barra inferior fija */
+}
+
+/* ==========================================================================
+   1. Encabezado Superior (Header)
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background-color: rgba(17, 19, 28, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  font-size: 1.35rem;
+  background: #1e1b4b;
+  border: 1px solid var(--accent-purple);
+  border-radius: var(--radius-sm);
+  padding: 4px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-cyan);
+}
+
+.brand-subtitle {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.avatar-btn {
+  background-color: var(--accent-purple-light);
+  color: #1e1b4b;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.avatar-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   2. Contenedor Principal
+   ========================================================================== */
+.content-wrapper {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+/* ==========================================================================
+   3. Sección Hero (Presentación)
+   ========================================================================== */
+.hero-section {
+  margin-bottom: 36px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: rgba(139, 92, 246, 0.12);
+  color: var(--accent-purple-light);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 14px;
+}
+
+.hero-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.text-highlight {
+  color: var(--accent-purple-light);
+  text-shadow: 0 0 16px rgba(139, 92, 246, 0.3);
+}
+
+.hero-description {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.cta-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--accent-purple-light);
+  color: #0f172a;
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Grilla de métricas técnicas retro */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 12px 10px;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent-cyan-light);
+}
+
+.stat-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   4. Sección de 3 Tarjetas de Contenido
+   ========================================================================== */
+.modules-section {
+  margin-bottom: 40px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.heading-icon {
+  font-size: 1.2rem;
+  color: var(--accent-cyan);
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.card:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  background-color: var(--bg-card);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-icon {
+  background-color: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 1.1rem;
+}
+
+.badge-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--accent-cyan-light);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  letter-spacing: 0.05em;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.card-text {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.card-text strong {
+  color: var(--accent-cyan-light);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.76rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+}
+
+.card-meta {
+  color: var(--text-muted);
+}
+
+.card-link {
+  color: var(--accent-cyan-light);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   5. Sección Inferior: Lecciones & Formulario
+   ========================================================================== */
+.guide-section {
+  background: linear-gradient(180deg, var(--bg-surface) 0%, #0d0f19 100%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 22px 18px;
+  margin-bottom: 36px;
+}
+
+.badge-sub {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent-cyan-light);
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.sub-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.sub-description {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.lesson-item {
+  display: flex;
+  gap: 12px;
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.lesson-number {
+  background-color: var(--accent-purple-light);
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.85rem;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lesson-body h4 {
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.lesson-body p {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+/* Formulario */
+.form-container {
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+
+.form-container h3 {
+  font-size: 0.98rem;
+  margin-bottom: 6px;
+}
+
+.form-container p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--accent-cyan);
+}
+
+.btn-download {
+  width: 100%;
+  background-color: var(--accent-cyan-light);
+  color: #0f172a;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+}
+
+/* ==========================================================================
+   6. Pie de Página (Footer)
+   ========================================================================== */
+.site-footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: var(--accent-cyan-light);
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-bottom: 4px;
+}
+
+/* ==========================================================================
+   7. Barra de Navegación Inferior (Móvil)
+   ========================================================================== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 62px;
+  background-color: rgba(17, 19, 28, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  gap: 2px;
+  transition: color 0.2s ease;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  color: var(--accent-cyan);
+}
+
+.nav-icon {
+  font-size: 1.1rem;
+}
