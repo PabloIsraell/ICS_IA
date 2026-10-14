@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Club · Videojuegos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="barra">
+    <a class="logo" href="#inicio">Pixel Club</a>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#juegos">Juegos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="hero-texto">
+      <h1>Un club donde cada partida deja huella</h1>
+      <p>Aventura, carreras y puzles para jugar solo o en compañía. Elige un juego y empieza.</p>
+      <a class="boton" href="#juegos">Ver los juegos</a>
+    </div>
+    <img src="imagenes/hero.svg" alt="Montañas bajo una luna violeta">
+  </header>
+
+  <main class="seccion" id="juegos">
+    <h2>Qué se juega aquí</h2>
+
+    <!-- Cada tarjeta es un botón: funciona con ratón y con teclado -->
+    <div class="tarjetas">
+      <button class="tarjeta" type="button"
+              data-descripcion="Explora un bosque iluminado por neones, resuelve enigmas y descubre los secretos de sus antiguos habitantes.">
+        <img src="imagenes/aventura.svg" alt="Montañas oscuras bajo una luna violeta">
+        <h3>Bosque de Neón</h3>
+        <p>Aventura de exploración en un mundo misterioso.</p>
+      </button>
+
+      <button class="tarjeta" type="button"
+              data-descripcion="Compite en circuitos nocturnos a toda velocidad, mejora tu coche y supera tus mejores tiempos.">
+        <img src="imagenes/carreras.svg" alt="Carretera nocturna que se pierde en el horizonte">
+        <h3>Circuito Nova</h3>
+        <p>Carreras rápidas con mejoras para tu vehículo.</p>
+      </button>
+
+      <button class="tarjeta" type="button"
+              data-descripcion="Mueve y encaja bloques de colores para completar cada nivel. Fácil de aprender, difícil de dejar.">
+        <img src="imagenes/puzle.svg" alt="Cuatro bloques de colores sobre fondo azul">
+        <h3>Cubo Lógico</h3>
+        <p>Puzles de bloques para pensar con calma.</p>
+      </button>
+    </div>
+  </main>
+
+  <footer class="seccion pie" id="contacto">
+    <h2>Visítanos</h2>
+    <div class="datos">
+      <div><h3>Dirección</h3><p>Calle Ejemplo, 12<br>33001, Oviedo</p></div>
+      <div><h3>Horario</h3><p>Martes a domingo<br>17:00 – 22:00</p></div>
+      <div><h3>Contacto</h3><p>hola@pixelclub.example<br>985 00 00 00</p></div>
+    </div>
+  </footer>
+
+  <dialog id="mensaje">
+    <h3 id="mensaje-titulo"></h3>
+    <p id="mensaje-texto"></p>
+    <button id="mensaje-cerrar" type="button">Cerrar</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
